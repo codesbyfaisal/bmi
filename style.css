@@ -50,7 +50,7 @@ input[type="range"]:active::-webkit-slider-thumb {
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 300px;
+  width: 20rem;
 }
 
 h2 {
@@ -86,10 +86,6 @@ p span {
   display: block;
 }
 
-p b {
-  display: block;
-}
-
 button {
   background-color: #6c5ce7;
   color: white;
@@ -109,4 +105,18 @@ button:hover {
   font-size: 1.25rem;
   color: #e17055;
   font-weight: bold;
+  line-height: 0;
+  align-items: end;
+}
+
+.result-category {
+  color: #6c5ce7;
+  line-height: 0;
+}
+
+@media screen and (max-width: 450px) {
+  .wrapper {
+    width: 100%;
+    padding: 1rem;
+  }
 }
