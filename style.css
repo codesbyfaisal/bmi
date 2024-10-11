@@ -75,6 +75,7 @@ p {
   color: #444;
   text-align: justify;
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -82,6 +83,10 @@ p span {
   font-weight: bold;
   color: #6c5ce7;
   min-width: 2rem;
+  display: block;
+}
+
+p b {
   display: block;
 }
 
