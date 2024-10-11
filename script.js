@@ -15,10 +15,18 @@ weight.addEventListener('input', () => {
   showWeight.innerHTML = weight.value
 })
 
+// * Calculate BMI
+const calculateBMI = () => {
+  const heightValue = height.value
+  const weightValue = weight.value
+  const bmi = (weightValue / ((heightValue * heightValue))).toFixed(2)
+  return bmi
+}
+
 // * Add event listener to form/app
 app.addEventListener('submit', (e) => {
   e.preventDefault()
-  console.log(height.value, weight.value);  
+  result.innerHTML = calculateBMI()
 })
 
 // * BMI Formula: BMI = (Weight in kg / (Height x Height))
