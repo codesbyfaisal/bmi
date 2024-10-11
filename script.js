@@ -23,10 +23,23 @@ const calculateBMI = () => {
   return bmi
 }
 
+// * Calculate category
+const calculateCategory = (bmi) => {
+  if (bmi < 18.5)
+    return 'Underweight'
+  else if (bmi >= 18.5 && bmi < 24.9)
+    return 'Normal weight'
+  else if (bmi >= 25 && bmi < 29.9)
+    return 'Overweight'
+  else
+    return 'Obese'
+}
+
 // * Add event listener to form/app
 app.addEventListener('submit', (e) => {
   e.preventDefault()
   result.innerHTML = calculateBMI()
+  resultCategory.innerHTML = calculateCategory(calculateBMI())
 })
 
 // * BMI Formula: BMI = (Weight in kg / (Height x Height))
