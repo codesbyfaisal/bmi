@@ -4,10 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+  <div class="wrapper">
+    <h2>Calculate Your BMI</h2>
+    <form class="app">
+      <div class="form-control">
+        <input type="range" id="weight" name="weight" min="10">
+        <p for="weight">WEIGHT <span>45</span> kg</p>
+      </div>
+      <div class="form-control">
+        <input type="range" id="height" name="height" min="10">
+        <p for="height">HEIGHT <span>45</span> meter</p>
+      </div>
+      <button type="submit">CALCULATE</button>
+      <p>Your BMI is <span class="result">24.5</span></p>
+    </form>
+  </div>
 
   <script src="./script.js"></script>
 </body>
