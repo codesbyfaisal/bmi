@@ -73,11 +73,16 @@ h2 {
 p {
   font-size: 1rem;
   color: #444;
+  text-align: justify;
+  display: flex;
+  gap: 1rem;
 }
 
 p span {
   font-weight: bold;
   color: #6c5ce7;
+  min-width: 2rem;
+  display: block;
 }
 
 button {
